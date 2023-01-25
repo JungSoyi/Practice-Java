@@ -1,4 +1,5 @@
 import player.Player;
+import player.Team;
 
 public class Main {
     public static void main(String[] args){
@@ -22,10 +23,28 @@ public class Main {
          */
         String[] name = {"Kim", "Lee", "Park"};
         int[][] points = {{10,9,9,8},{9,10,9,9},{10,9,10,10}};
-        for(int i=0; i<name.length;i++){
-            Player player = new Player(name[i],points[i]);
-            player.score();
+
+        String nation = "KOREA";
+        Player[] players = new Player[name.length];
+
+        for(int j=0; j<name.length;j++){
+            Player player = new Player(name[j],points[j]);
+            int result = player.score();
+            players[j] = player;
+            System.out.printf("선수 %s의 총 점수: %d점 \n", name[j], result );
+            System.out.printf("players[%d]의 배열:",j);
+            System.out.println(players[j].points);
         }
 
+        /**
+         * 양궁 팀 문제
+         */
+        Team teamKorea = new Team(nation, players);
+        int result = teamKorea.totalScore(players);
+        System.out.printf("%s -> %d points", nation, result);
+
     }
+
+
+
 }
