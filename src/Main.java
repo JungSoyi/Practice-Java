@@ -1,4 +1,4 @@
-import point.Point;
+import knight.Knight;
 
 public class Main {
     public static void main(String[] args) {
@@ -66,10 +66,17 @@ public class Main {
         /**
          * 두 점 사이의 거리 구하기 문제
          */
-        Point p1 = new Point(0,0);
-        Point p2 = new Point(3,4);
-        System.out.println(Point.dist(p1,p2));
+//        Point p1 = new Point(0,0);
+//        Point p2 = new Point(3,4);
+//        System.out.println(Point.dist(p1,p2));
 
+        /**
+         * 돈키호테 문제
+         */
+        Knight knight = new Knight("돈키호테", 30);
+        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
+        knight.setHp(knight.getHp()+30);
+        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
 
     }
 
