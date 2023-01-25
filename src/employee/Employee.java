@@ -18,13 +18,13 @@ public class Employee {
 
     public void printTotalHours(){
         for(int i=0; i<hours.length; i++) {
-            System.out.printf("일한 시간: %d 시간 \n", hours[i]);
+            System.out.printf("%s이 일한 시간: %d 시간 \n", name, hours[i]);
             count+=hours[i];
         }
     }
 
     public int totalHours(){
-        System.out.printf("총 일한 시간: %d 시간",count);
+        System.out.printf("%s이 총 일한 시간: %d 시간 \n",name, count);
         return count;
     }
 
