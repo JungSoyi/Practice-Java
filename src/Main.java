@@ -1,4 +1,4 @@
-import knight.Knight;
+import inheritance.MotorBicycle;
 
 public class Main {
     public static void main(String[] args) {
@@ -73,10 +73,18 @@ public class Main {
         /**
          * 돈키호테 문제
          */
-        Knight knight = new Knight("돈키호테", 30);
-        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
-        knight.setHp(knight.getHp()+30);
-        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
+//        Knight knight = new Knight("돈키호테", 30);
+//        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
+//        knight.setHp(knight.getHp()+30);
+//        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
+
+        // 자전거 예제
+        MotorBicycle mb = new MotorBicycle();
+        mb.name = "싱싱이";
+        mb.battery = 500;
+
+        mb.pedal();
+        mb.motor();
 
     }
 
