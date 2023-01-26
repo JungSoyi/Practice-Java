@@ -1,4 +1,6 @@
-import animal.Pet;
+import adventurer.Adventurer;
+import adventurer.Knight;
+import adventurer.Thief;
 
 public class Main {
     public static void main(String[] args) {
@@ -89,13 +91,36 @@ public class Main {
         /**
          * animal 예제
          */
-        Pet pet = new Pet();
-        pet.name = "은비";
-        pet.age = 5;
-        pet.price = 1000000000;
+//        Pet pet = new Pet();
+//        pet.name = "은비";
+//        pet.age = 5;
+//        pet.price = 1000000000;
+//
+//        System.out.printf("name: %s, age: %d, price: %d", pet.name, pet.age, pet.price);
 
-        System.out.printf("name: %s, age: %d, price: %d", pet.name, pet.age, pet.price);
+        /**
+         * adventurer 문제
+         */
+        Knight knight = new Knight();
+        knight.name = "아서스";
+        knight.hp = 100;
+        knight.strength = 50;
 
+        Thief thief = new Thief();
+        thief.name = "발리라";
+        thief.hp = 120;
+        thief.agility = 40;
+
+        Adventurer ad1 = knight;
+        Adventurer ad2 = thief;
+
+        Adventurer[] ad = {ad1, ad2};
+
+        for ( int i = 0; i<ad.length; i++){
+            
+            ad[i].punch();
+            ad[i].tostring();
+        }
     }
 
 
