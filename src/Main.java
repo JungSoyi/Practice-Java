@@ -1,4 +1,4 @@
-import inheritance.MotorBicycle;
+import animal.Pet;
 
 public class Main {
     public static void main(String[] args) {
@@ -79,12 +79,22 @@ public class Main {
 //        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
 
         // 자전거 예제
-        MotorBicycle mb = new MotorBicycle();
-        mb.name = "싱싱이";
-        mb.battery = 500;
+//        MotorBicycle mb = new MotorBicycle();
+//        mb.name = "싱싱이";
+//        mb.battery = 500;
+//
+//        mb.pedal();
+//        mb.motor();
 
-        mb.pedal();
-        mb.motor();
+        /**
+         * animal 예제
+         */
+        Pet pet = new Pet();
+        pet.name = "은비";
+        pet.age = 5;
+        pet.price = 1000000000;
+
+        System.out.printf("name: %s, age: %d, price: %d", pet.name, pet.age, pet.price);
 
     }
 
