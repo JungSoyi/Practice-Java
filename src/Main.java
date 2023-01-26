@@ -101,15 +101,10 @@ public class Main {
         /**
          * adventurer 문제
          */
-        Knight knight = new Knight();
-        knight.name = "아서스";
-        knight.hp = 100;
-        knight.strength = 50;
+        Knight knight = new Knight("아서스",100,50);
 
-        Thief thief = new Thief();
-        thief.name = "발리라";
-        thief.hp = 120;
-        thief.agility = 40;
+
+        Thief thief = new Thief("발리라",120,40);
 
         Adventurer ad1 = knight;
         Adventurer ad2 = thief;
@@ -117,7 +112,7 @@ public class Main {
         Adventurer[] ad = {ad1, ad2};
 
         for ( int i = 0; i<ad.length; i++){
-            
+
             ad[i].punch();
             ad[i].tostring();
         }

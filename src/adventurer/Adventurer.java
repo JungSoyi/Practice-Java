@@ -1,8 +1,30 @@
 package adventurer;
 
 public class Adventurer {
-    public String name;
-    public int hp;
+    protected String name;
+    protected int hp;
+
+    public Adventurer(String name, int hp) {
+        this.name = name;
+        this.hp = hp;
+    }
+
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String n){
+        name = n;
+    }
+
+    public int getHp(){
+        return hp;
+    }
+
+    public void setHp(int h){
+        hp = h;
+    }
 
     public void punch(){
         System.out.printf("[%s]의 펀치!\n", name);
