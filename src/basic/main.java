@@ -23,5 +23,15 @@ public class main {
             }
         }
         System.out.println("Outter 종료");
+
+        /**
+         * continue: 조건에 만족하면 다음 문장을 실행하지 않고 다음 반복으로 넘어간다.
+         */
+        for(int i=1; i<11; i++){
+            if(i%2!=0){
+                continue;
+            }
+            System.out.println(i);
+        }
    }
 }
