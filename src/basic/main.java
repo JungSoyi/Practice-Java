@@ -1,5 +1,7 @@
 package basic;
 
+import java.util.Calendar;
+
 public class main {
     public static void main(String[] args) {
         while(true){
@@ -91,6 +93,44 @@ public class main {
         double avg = sum/ newScores.length;
         System.out.println("평균 점수: "+ avg);
 
+        Week reservationDay;
+
+        Week today = null;
+
+        System.out.println(today==Week.SATURDAY);
+
+        Calendar now = Calendar.getInstance(); // 연 월 일 요일 시간 분 초
+        int year = now.get(Calendar.YEAR);
+        int month = now.get(Calendar.MONTH);
+        int day = now.get(Calendar.DAY_OF_MONTH);
+        int week = now.get(Calendar.DAY_OF_WEEK);
+        int hour = now.get(Calendar.HOUR);
+        int minute = now.get(Calendar.MINUTE);
+        int second = now.get(Calendar.SECOND);
+
+        System.out.println(now);
+        System.out.println(week);
+        switch(week){
+            case 1:
+                today = Week.SUNDAY; break;
+            case 2:
+                today = Week.MONDAY; break;
+            case 3:
+                today = Week.TUESDAY; break;
+            case 4:
+                today = Week.WEDNESDAY; break;
+            case 5:
+                today = Week.THURSDAY; break;
+            case 6:
+                today = Week.FRIDAY; break;
+            case 7:
+                today = Week.SATURDAY; break;
+
+        }
+
+        System.out.println("오늘은 "+today);
+
+
 
     }
     public static int add(int[] scores){
@@ -100,4 +140,6 @@ public class main {
         }
         return sum;
     }
+
+
 }
