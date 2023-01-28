@@ -1,4 +1,6 @@
-import knight.Knight;
+import adventurer.Adventurer;
+import adventurer.Knight;
+import adventurer.Thief;
 
 public class Main {
     public static void main(String[] args) {
@@ -73,11 +75,47 @@ public class Main {
         /**
          * 돈키호테 문제
          */
-        Knight knight = new Knight("돈키호테", 30);
-        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
-        knight.setHp(knight.getHp()+30);
-        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
+//        Knight knight = new Knight("돈키호테", 30);
+//        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
+//        knight.setHp(knight.getHp()+30);
+//        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
 
+        // 자전거 예제
+//        MotorBicycle mb = new MotorBicycle();
+//        mb.name = "싱싱이";
+//        mb.battery = 500;
+//
+//        mb.pedal();
+//        mb.motor();
+
+        /**
+         * animal 예제
+         */
+//        Pet pet = new Pet();
+//        pet.name = "은비";
+//        pet.age = 5;
+//        pet.price = 1000000000;
+//
+//        System.out.printf("name: %s, age: %d, price: %d", pet.name, pet.age, pet.price);
+
+        /**
+         * adventurer 문제
+         */
+        Knight knight = new Knight("아서스",100,50);
+
+
+        Thief thief = new Thief("발리라",120,40);
+
+        Adventurer ad1 = knight;
+        Adventurer ad2 = thief;
+
+        Adventurer[] ad = {ad1, ad2};
+
+        for ( int i = 0; i<ad.length; i++){
+
+            ad[i].punch();
+            ad[i].tostring();
+        }
     }
 
 
