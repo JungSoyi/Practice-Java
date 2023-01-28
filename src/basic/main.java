@@ -10,5 +10,18 @@ public class main {
                 break;
             }
         }
-    }
+
+        /**
+         * 이중 반복문에서 break로 바깥 반복문까지 종료하고 싶을 땐, break 뒤 바깥 반복문의 라벨을 붙인다.
+         */
+        Outter: for(char upper = 'A'; upper<='Z'; upper++){
+            for(char lower='a'; lower<='z'; lower++){
+                System.out.println(upper + "-" + lower);
+                if(lower=='g'){
+                    break Outter;
+                }
+            }
+        }
+        System.out.println("Outter 종료");
+   }
 }
