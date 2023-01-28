@@ -1,123 +1,123 @@
-import adventurer.Adventurer;
-import adventurer.Knight;
-import adventurer.Thief;
-
-public class Main {
-    public static void main(String[] args) {
-
-        /**
-         * employee 문제
-         */
-//        String[] name = {"직원1", "직원2", "직원3"};
-//        int[][] hours = {{30,21,43,36,33},{30,21,43,36,33},{30,21,43,36,33}};
+//import adventurer.Adventurer;
+//import adventurer.Knight;
+//import adventurer.Thief;
 //
-//        Employee[] employees = new Employee[name.length];
-//
-//        for(int i=0; i<name.length;i++){
-//            employees[i] = new Employee(name[i],hours[i]);
-//            employees[i].printTotalHours();
-//            employees[i].totalHours();
-//        }
-
-//        /**
-//         * 양궁 문제
-//         */
-//        String[] name = {"Kim", "Lee", "Park"};
-//        int[][] points = {{10,9,9,8},{9,10,9,9},{10,9,10,10}};
-//
-//        String nation = "KOREA";
-//        Player[] players = new Player[name.length];
-//
-//        for(int j=0; j<name.length;j++){
-//            Player player = new Player(name[j],points[j]);
-//            int result = player.score();
-//            players[j] = player;
-//            System.out.printf("선수 %s의 총 점수: %d점 \n", name[j], result );
-//            System.out.printf("players[%d]의 배열:",j);
-//            System.out.println(players[j].points);
-//        }
+//public class Main {
+//    public static void main(String[] args) {
 //
 //        /**
-//         * 양궁 팀 문제
+//         * employee 문제
 //         */
-//        Team teamKorea = new Team(nation, players);
-//        int result = teamKorea.totalScore(players);
-//        System.out.printf("%s -> %d points", nation, result);
-
-        /**
-         * 붕어빵 문제
-         */
-//        FishBread fishBread1 = new FishBread("팥");
-//        FishBread fishBread2 = new FishBread("고구마");
-//        FishBread fishBread3 = new FishBread("치즈");
-//        FishBread fishBread4 = new FishBread("슈크림");
+////        String[] name = {"직원1", "직원2", "직원3"};
+////        int[][] hours = {{30,21,43,36,33},{30,21,43,36,33},{30,21,43,36,33}};
+////
+////        Employee[] employees = new Employee[name.length];
+////
+////        for(int i=0; i<name.length;i++){
+////            employees[i] = new Employee(name[i],hours[i]);
+////            employees[i].printTotalHours();
+////            employees[i].totalHours();
+////        }
 //
-//        fishBread1.flavorCount();
-//        fishBread2.flavorCount();
-//        fishBread3.flavorCount();
-//        fishBread4.flavorCount();
-//        System.out.println("=================");
-//        System.out.printf("붕어빵 객체 =>: %d",fishBread4.count);
-
-        /**
-         * 원의 넓이 구하기 문제
-         */
-//        Circle circle = new Circle(0, 0, 3);
-//        System.out.println(Circle.area(circle));
-
-        /**
-         * 두 점 사이의 거리 구하기 문제
-         */
-//        Point p1 = new Point(0,0);
-//        Point p2 = new Point(3,4);
-//        System.out.println(Point.dist(p1,p2));
-
-        /**
-         * 돈키호테 문제
-         */
-//        Knight knight = new Knight("돈키호테", 30);
-//        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
-//        knight.setHp(knight.getHp()+30);
-//        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
-
-        // 자전거 예제
-//        MotorBicycle mb = new MotorBicycle();
-//        mb.name = "싱싱이";
-//        mb.battery = 500;
+////        /**
+////         * 양궁 문제
+////         */
+////        String[] name = {"Kim", "Lee", "Park"};
+////        int[][] points = {{10,9,9,8},{9,10,9,9},{10,9,10,10}};
+////
+////        String nation = "KOREA";
+////        Player[] players = new Player[name.length];
+////
+////        for(int j=0; j<name.length;j++){
+////            Player player = new Player(name[j],points[j]);
+////            int result = player.score();
+////            players[j] = player;
+////            System.out.printf("선수 %s의 총 점수: %d점 \n", name[j], result );
+////            System.out.printf("players[%d]의 배열:",j);
+////            System.out.println(players[j].points);
+////        }
+////
+////        /**
+////         * 양궁 팀 문제
+////         */
+////        Team teamKorea = new Team(nation, players);
+////        int result = teamKorea.totalScore(players);
+////        System.out.printf("%s -> %d points", nation, result);
 //
-//        mb.pedal();
-//        mb.motor();
-
-        /**
-         * animal 예제
-         */
-//        Pet pet = new Pet();
-//        pet.name = "은비";
-//        pet.age = 5;
-//        pet.price = 1000000000;
+//        /**
+//         * 붕어빵 문제
+//         */
+////        FishBread fishBread1 = new FishBread("팥");
+////        FishBread fishBread2 = new FishBread("고구마");
+////        FishBread fishBread3 = new FishBread("치즈");
+////        FishBread fishBread4 = new FishBread("슈크림");
+////
+////        fishBread1.flavorCount();
+////        fishBread2.flavorCount();
+////        fishBread3.flavorCount();
+////        fishBread4.flavorCount();
+////        System.out.println("=================");
+////        System.out.printf("붕어빵 객체 =>: %d",fishBread4.count);
 //
-//        System.out.printf("name: %s, age: %d, price: %d", pet.name, pet.age, pet.price);
-
-        /**
-         * adventurer 문제
-         */
-        Knight knight = new Knight("아서스",100,50);
-
-
-        Thief thief = new Thief("발리라",120,40);
-
-        Adventurer ad1 = knight;
-        Adventurer ad2 = thief;
-
-        Adventurer[] ad = {ad1, ad2};
-
-        for ( int i = 0; i<ad.length; i++){
-
-            ad[i].punch();
-            ad[i].tostring();
-        }
-    }
-
-
-
-}
+//        /**
+//         * 원의 넓이 구하기 문제
+//         */
+////        Circle circle = new Circle(0, 0, 3);
+////        System.out.println(Circle.area(circle));
+//
+//        /**
+//         * 두 점 사이의 거리 구하기 문제
+//         */
+////        Point p1 = new Point(0,0);
+////        Point p2 = new Point(3,4);
+////        System.out.println(Point.dist(p1,p2));
+//
+//        /**
+//         * 돈키호테 문제
+//         */
+////        Knight knight = new Knight("돈키호테", 30);
+////        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
+////        knight.setHp(knight.getHp()+30);
+////        System.out.printf("Knight { name: %s, hp: %d }", knight.getName(), knight.getHp());
+//
+//        // 자전거 예제
+////        MotorBicycle mb = new MotorBicycle();
+////        mb.name = "싱싱이";
+////        mb.battery = 500;
+////
+////        mb.pedal();
+////        mb.motor();
+//
+//        /**
+//         * animal 예제
+//         */
+////        Pet pet = new Pet();
+////        pet.name = "은비";
+////        pet.age = 5;
+////        pet.price = 1000000000;
+////
+////        System.out.printf("name: %s, age: %d, price: %d", pet.name, pet.age, pet.price);
+//
+//        /**
+//         * adventurer 문제
+//         */
+//        Knight knight = new Knight("아서스",100,50);
+//
+//
+//        Thief thief = new Thief("발리라",120,40);
+//
+//        Adventurer ad1 = knight;
+//        Adventurer ad2 = thief;
+//
+//        Adventurer[] ad = {ad1, ad2};
+//
+//        for ( int i = 0; i<ad.length; i++){
+//
+//            ad[i].punch();
+//            ad[i].tostring();
+//        }
+//    }
+//
+//
+//
+//}
