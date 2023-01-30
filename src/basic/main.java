@@ -136,7 +136,7 @@ public class main {
         System.out.println();
 
         Car car2 = new Car("자가용");
-        System.out.println("car2.company : " + car2.company + ", car2.model : " + car2.model);
+        System.out.println("car2.company : " + car2.company + ", car2.model : " + car2.model + ",car2.color : " + car2.color);
         System.out.println();
 
         Car car3 = new Car("자가용","빨강");
@@ -144,7 +144,7 @@ public class main {
         System.out.println();
 
         Car car4 = new Car("택시", "검정", 200);
-        System.out.println("car4.company : " + car4.company + ", car4.model : " + car4.model + ", car4.color : " + car4.color + "car4.maxSpeed : " + car4.maxSpeed);
+        System.out.println("car4.company : " + car4.company + ", car4.model : " + car4.model + ", car4.color : " + car4.color + ", car4.maxSpeed : " + car4.maxSpeed);
     }
     public static int add(int[] scores){
         int sum = 0;
